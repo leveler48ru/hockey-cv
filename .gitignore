@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+
+# Datasets, model weights, media (not published)
+dataset*/
+datasets/
+runs/
+weights/
+*.pt
+*.onnx
+*.npz
+*.npy
+*.jsonl
+*.jsonl.gz
+*.mp4
+*.avi
+*.mov
+*.wav
+*.mp3
+
+# Intermediate / caches
+*.log
+pan/
+masks/
+labeled/
+wide/
+wide_fg/
+media/
+sb_plates.npy
+*.sqlite
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store

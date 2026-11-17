@@ -1,0 +1,11 @@
+# bytetrack for the puck: a small fast object tends to lose its id.
+# IMPORTANT (pitfall 10.11): this file fully replaces the ultralytics default
+# cfg/trackers/bytetrack.yaml — ALL keys must be present, otherwise
+# AttributeError: 'IterableSimpleNamespace' object has no attribute 'fuse_score'.
+tracker_type: bytetrack
+track_high_thresh: 0.35   # default 0.25: keep confident tracks
+track_low_thresh: 0.15    # default 0.10: second stage for weak puck detections
+new_track_thresh: 0.45    # default 0.25: spawn new tracks less often = fewer false ids
+track_buffer: 45          # default 30: survive occlusion by players (~1.5 s at 30 fps)
+match_thresh: 0.7         # default 0.8: slightly looser matching
+fuse_score: True          # REQUIRED
