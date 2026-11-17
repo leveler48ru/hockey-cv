@@ -1,0 +1,5 @@
+path: /data
+train: images/train
+val: images/val
+nc: 9
+names: ['red_line', 'blue_line', 'center_circle', 'faceoff_spot', 'faceoff_circle', 'goal_crease', 'board', 'player', 'referee']

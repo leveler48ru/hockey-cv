@@ -1,0 +1,5 @@
+path: dataset_real
+train: images/train
+val: images/val
+nc: 7
+names: ['red_line', 'blue_line', 'center_circle', 'faceoff_spot', 'faceoff_circle', 'goal_crease', 'board']

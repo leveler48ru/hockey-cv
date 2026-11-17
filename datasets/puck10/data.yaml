@@ -1,0 +1,4 @@
+train: images/train
+val: images/val
+nc: 4
+names: ['goaltender', 'player', 'puck', 'referee']
